@@ -133,10 +133,10 @@ SELECT * FROM NOMBRETABLA WHERE atributo1 = 1 ORDER BY atributo2 DESC;
 SELECT * FROM NOMBRETABLA WHERE atributo1 = 1 ORDER BY atributo2 LIMIT 10 OFFSET 10;
 
 //seleccionar datos con restricciones y ordenar y paginar y contar el total de resultados
-SELECT COUNT(*) OVER() AS total, * FROM NOMBRETABLA WHERE atributo1 = 1 ORDER BY atributo2 LIMIT 10 OFFSET 10;
+SELECT COUNT(*)  AS total, * FROM NOMBRETABLA WHERE atributo1 = 1 ORDER BY atributo2 LIMIT 10 OFFSET 10;
 
 // seleccionar datos con restricciones y ordenar y paginar y contar el total de resultados
-SELECT COUNT(*) OVER() AS total, * FROM NOMBRETABLA WHERE atributo1 = 1 ORDER BY atributo2 LIMIT 10 OFFSET 10;
+SELECT COUNT(*)  AS total, * FROM NOMBRETABLA WHERE atributo1 = 1 ORDER BY atributo2 LIMIT 10 OFFSET 10;
 
 // seleccionar datos con restricciones y ordenar y paginar y contar el total de resultados
-SELECT SUM(atributo1) OVER() AS total, * FROM NOMBRETABLA WHERE atributo1 = 1 ORDER BY atributo2 LIMIT 10 OFFSET 10;
+SELECT SUM(atributo1)  AS total, * FROM NOMBRETABLA WHERE atributo1 = 1 ORDER BY atributo2 LIMIT 10 OFFSET 10;
