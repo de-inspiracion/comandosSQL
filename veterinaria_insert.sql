@@ -260,3 +260,21 @@ VALUES (
 );
 
 COMMIT;
+
+
+
+
+
+-- Insert adicionales de catalogo de servicios
+insert into service_catalog(name, price) values('General Health Checkup', 30000);
+insert into service_catalog(name, price) values('Vaccination', 25000);
+insert into service_catalog(name, price) values('Deworming Treatment', 18000);
+insert into service_catalog(name, price) values('Spay Surgery', 180000);
+insert into service_catalog(name, price) values('Neuter Surgery', 150000);
+insert into service_catalog(name, price) values('Dental Cleaning', 120000);
+insert into service_catalog(name, price) values('X-Ray Examination', 85000);
+insert into service_catalog(name, price) values('Ultrasound Scan', 95000);
+insert into service_catalog(name, price) values('Emergency Consultation', 50000);
+insert into service_catalog(name, price) values('Microchip Implantation', 45000);
+
+insert into appointment_services(service_id, appointment_id) values(2,2), (27,21 ), (26,21 ), (28,21), (30, 25), (31, 25);
